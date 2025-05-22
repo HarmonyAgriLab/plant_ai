@@ -8,4 +8,4 @@ echo "$(date) - Starting test.py" >>/home/cat/rknn_toolkit_lite2/examples/yolov5
 source ~/miniconda3/bin/activate
 conda activate yolov5
 cd ~/rknn_toolkit_lite2/examples/yolov5_plant/
-python test.py
+python show.py
