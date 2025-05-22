@@ -53,5 +53,12 @@ python export.py --weights runs/exp/weights/best.pt --include onnx
 确认模型可以成功在部署端运行后，继续配置开机自启动脚本。
 
 可参考[开机自启动脚本](https://blog.csdn.net/csdn570566705/article/details/131931703?ops_request_misc=&request_id=&biz_id=102&utm_term=liunx%E4%B8%8B%E5%A2%9E%E5%8A%A0%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-131931703.142^v102^pc_search_result_base2&spm=1018.2226.3001.4187)进行部署，本仓库使用的为systemd方法，方法一无法调动cv中的ui窗口以及读取摄像头权限
-参考脚本见start_script.sh，部署时修改具体路径以及相关命令
+
 注：在部署开机自启前，务必确定编写好的脚本能够手动调用成功，并确保模型能够正常运行
+```bash
+# 参考脚本见start_script.sh，部署时修改具体路径以及相关命令
+bash start_script.sh
+```
+
+
+
